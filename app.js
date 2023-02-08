@@ -33,7 +33,7 @@ const insertDivInToDOM = async (inputValue) => {
 
   if (GIFData) {
     const downsizeGIFUrl = GIFData.data[0].images.downsized.url;
-    genereteGIFImg(downsizeGIFUrl, GIFData);
+    const img = genereteGIFImg(downsizeGIFUrl, GIFData);
     GIFSContainer.insertAdjacentElement("afterbegin", img);
   }
   form.reset();
